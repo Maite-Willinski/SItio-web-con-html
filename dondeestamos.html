@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> ¿Donde estamos?</h1>
+    <p> Te esperamos en el corazón de la ciudad, en un ambiente cálido y acogedor.</p>
+    <p> Nuestro restaurante está ubicado en una zona estratégica, ideal para disfrutar de la mejor cocina mediterránea. Nos encontramos cerca de puntos emblemáticos y con excelente acceso en transporte público o privado.</p>
+
+    <h2> Nos encontramos en...</h2>
+     <p> Dirección:</p>
+        Calle Sabores, 123
+        Centro Histórico, Ciudad de la Alegría
+
+        <button onclick="mostrarInstrucciones()">¿Cómo llegar? Haz click en el botón</button>
+    <p id="instrucciones" style="display: none; margin-top: 10px;">
+        Si vienes en coche, encontrarás parking cercano en el estacionamiento "Gastronómico Plaza". También puedes llegar en autobús (líneas 10 y 15) o en metro, bajándote en la estación "Sabor y Arte".
+    </p>
+    <script>
+        function mostrarInstrucciones() {
+            const elemento = document.getElementById("instrucciones");
+            elemento.style.display = elemento.style.display === "none" ? "block" : "none";
+        }
+    </script>
+        
+</body>
+</html>
